@@ -7,20 +7,25 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-zinc-900">
-    <div class="text-white p-10 ">
-        <h1 class="font-bold p-3 text-2xl ml-90 mb-5">Create Your Account</h1>
-        <form action="/register" method="post" class="grid grid-rows-4 grid-flow-col gap-5">
-            <input  class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 ml-5 " type="text" placeholder="username" name="username">
-            <input class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 ml-5 " type="text" placeholder="name" name="name">
-            <input class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 ml-5 " type="number" placeholder="age" name="age">
-            <input class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 ml-5" type="email" placeholder="email" name="email">
-            <input class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 " type="password" placeholder="password" name="password">
-            <input type="submit" class="outline-none ml-1 cursor-pointer  px-5 py-2 bg-blue-700 border-blue-900 rounded-xl w-64 v" value="Create Account">
+    <div class="text-white p-10 border-[2px] border-zinc-800 w-2/5 rounded mt-30 ml-99 ">
+        <h1 class="font-bold p-2 mb-5 text-2xl ml-35 ">Create Your Account</h1>
+        <form action="/register" method="post">
+
+           <span class="font-bold ml-15">  Username :</span> <input  class="outline-none border-2 p-1 border-zinc-800 rounded w-64 ml-5 mb-5 " type="text" placeholder="username" name="username"><br>
+          <span class="font-bold ml-15">  Name :</span>  <input class="outline-none border-2 p-1 border-zinc-800 rounded w-64 ml-13 mb-5 " type="text" placeholder="name" name="name"> <br>
+           <span class="font-bold ml-15">  Age :</span> <input class="outline-none border-2 p-1 border-zinc-800 rounded w-64 ml-17 mb-5 " type="number" placeholder="age" name="age"><br> 
+           <span class="font-bold ml-15">  Email :</span> <input class="outline-none border-2 p-1 border-zinc-800 rounded w-64 ml-14 mb-5" type="email" placeholder="email" name="email"> <br>
+           <span class="font-bold ml-15">  Password :</span> <input class="outline-none border-2 p-1 border-zinc-800 rounded w-64 ml-7" type="password" placeholder="password" name="password"><br>
+
+            <div class="flex items-center justify-center gap-5 mt-5">
+                <input type="submit" class="outline-none text-white ml-7 px-3 py-1 bg-red-700 border-red-700 rounded" value="Create Account">
+                <a href="/login" class="text-sm text-blue-500 cursor-pointer " >Login </a>
+            </div>
         </form>
 
     </div>
 
-    <a href="/login" class="outline-none text-white ml-16 px-5 py-2 bg-red-700 border-blue-900 rounded">Login </a>
+   
     
 </body>
 </html>
