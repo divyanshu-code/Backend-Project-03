@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-zinc-900">
+    <div class="text-white p-10 ">
+        <h1 class="font-bold p-3 text-2xl ml-90 mb-5">Create Your Account</h1>
+        <form action="/register" method="post" class="grid grid-rows-4 grid-flow-col gap-5">
+            <input  class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 ml-5 " type="text" placeholder="username" name="username">
+            <input class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 ml-5 " type="text" placeholder="name" name="name">
+            <input class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 ml-5 " type="number" placeholder="age" name="age">
+            <input class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 ml-5" type="email" placeholder="email" name="email">
+            <input class="outline-none border-2 p-2 border-zinc-800 rounded-xl w-64 " type="password" placeholder="password" name="password">
+            <input type="submit" class="outline-none ml-1 cursor-pointer  px-5 py-2 bg-blue-700 border-blue-900 rounded-xl w-64 v" value="Create Account">
+        </form>
+
+    </div>
+
+    <a href="/login" class="outline-none text-white ml-16 px-5 py-2 bg-red-700 border-blue-900 rounded">Login </a>
+    
+</body>
+</html>
