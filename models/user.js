@@ -2,10 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config(); // to read .env locally
 
 // ✅ Use environment variable instead of hardcoding localhost
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("✅ MongoDB connected"))
 .catch(err => console.error("❌ MongoDB connection error:", err));
 
